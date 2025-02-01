@@ -1,11 +1,8 @@
 import pandas as pd
-import yfinance
+import yfinance as yf
+import talib as ta
+import matplotlib.pyplot as plt
 
-mydataset = {
-  'cars': ["BMW", "Volvo", "Ford"],
-  'passings': [3, 7, 2]
-}
+tickers_list= ["SOXL","SOXS","UBER","PDD","JKS","NVDA","MU"] # list of stocks I want to keep track of
+tickers_data= {} # empty dictionary
 
-myvar = pd.DataFrame(mydataset)
-
-print(myvar)
