@@ -1,6 +1,12 @@
 import pandas as pd
 import yfinance as yf
 import talib as ta
+import telegram_send
+
+TOKIN = '8099730414:AAEEmj7GBNFv_R6DGGcQlfbSCBKWRX74UjU'
+
+import requests
+url = 'https://telegram.me/Jades_rsi_bot'
 
 # List of stocks 
 tickers_list = ["SOXL", "SOXS", "UBER", "PDD", "JKS", "NVDA", "MU", "MSFT"]
@@ -29,3 +35,5 @@ rsi_combined_flat = pd.DataFrame({
 
 # Display the flat dataframe
 print(rsi_combined_flat)
+
+
